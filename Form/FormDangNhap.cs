@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PhanMemQuanLyDiemSinhVien
 {
-    public partial class FormDangKi : Form
+    public partial class FormDangNhap : Form
     {
-        public FormDangKi()
+        public FormDangNhap()
         {
             InitializeComponent();
-        }
-
-        private void pbx_Help_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
