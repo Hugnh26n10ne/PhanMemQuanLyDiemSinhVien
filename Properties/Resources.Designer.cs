@@ -63,9 +63,9 @@ namespace PhanMemQuanLyDiemSinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _382556233_817950156693875_836997368643846521_n {
+        internal static System.Drawing.Bitmap help {
             get {
-                object obj = ResourceManager.GetObject("382556233_817950156693875_836997368643846521_n", resourceCulture);
+                object obj = ResourceManager.GetObject("help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
