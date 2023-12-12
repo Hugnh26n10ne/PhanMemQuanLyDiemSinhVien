@@ -1,6 +1,6 @@
-## PhanMemQuanLyDiemSinhVien
-# Working with teams
-# Member:
+# PhanMemQuanLyDiemSinhVien
+## Working with teams
+## Member:
 + Đàm Đình Hưng
 + Nguyễn Phùng Ngọc Lương
 + Nguyễn Vũ Kiên
