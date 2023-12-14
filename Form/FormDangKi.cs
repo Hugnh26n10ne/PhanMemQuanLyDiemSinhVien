@@ -17,9 +17,9 @@ namespace PhanMemQuanLyDiemSinhVien
             InitializeComponent();
         }
 
-        private void pbx_Help_Click(object sender, EventArgs e)
+        private void btn_DangKi_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

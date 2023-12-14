@@ -64,10 +64,10 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("UTM Alexander", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(371, 28);
+            this.label5.Location = new System.Drawing.Point(346, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(240, 72);
             this.label5.TabIndex = 1;
@@ -76,7 +76,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.pbx_Help);
             this.groupBox1.Controls.Add(this.label4);
@@ -108,7 +108,6 @@
             this.pbx_Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_Help.TabIndex = 12;
             this.pbx_Help.TabStop = false;
-            this.pbx_Help.Click += new System.EventHandler(this.pbx_Help_Click);
             // 
             // label4
             // 
@@ -175,6 +174,7 @@
             this.btn_DangKi.TabIndex = 4;
             this.btn_DangKi.Text = "Đăng Kí";
             this.btn_DangKi.UseVisualStyleBackColor = false;
+            this.btn_DangKi.Click += new System.EventHandler(this.btn_DangKi_Click);
             // 
             // tbx_MatKhau
             // 
