@@ -15,3 +15,8 @@ C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDi
 C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
 C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.Properties.Resources.resources
 C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDiem.resources
+C:\Users\Admin\source\repos\PhanMemQuanLyDiemSinhVien1\bin\Debug\PhanMemQuanLyDiemSinhVien.exe.config
+C:\Users\Admin\source\repos\PhanMemQuanLyDiemSinhVien1\bin\Debug\PhanMemQuanLyDiemSinhVien.exe
+C:\Users\Admin\source\repos\PhanMemQuanLyDiemSinhVien1\bin\Debug\PhanMemQuanLyDiemSinhVien.pdb
+C:\Users\Admin\source\repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDiemTB.resources

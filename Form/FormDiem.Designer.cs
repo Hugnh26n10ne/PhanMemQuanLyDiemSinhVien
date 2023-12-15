@@ -95,13 +95,14 @@
             // 
             // btn_Xuatfile
             // 
+            this.btn_Xuatfile.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Xuatfile.Font = new System.Drawing.Font("UTM Alexander", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xuatfile.Location = new System.Drawing.Point(428, 388);
             this.btn_Xuatfile.Name = "btn_Xuatfile";
             this.btn_Xuatfile.Size = new System.Drawing.Size(117, 42);
             this.btn_Xuatfile.TabIndex = 7;
             this.btn_Xuatfile.Text = "Xuất file Exel";
-            this.btn_Xuatfile.UseVisualStyleBackColor = true;
+            this.btn_Xuatfile.UseVisualStyleBackColor = false;
             // 
             // grb_Bangdiemsv
             // 
@@ -137,7 +138,7 @@
             this.dtgrv_bangdiemsv.Name = "dtgrv_bangdiemsv";
             this.dtgrv_bangdiemsv.RowHeadersWidth = 51;
             this.dtgrv_bangdiemsv.RowTemplate.Height = 24;
-            this.dtgrv_bangdiemsv.Size = new System.Drawing.Size(956, 292);
+            this.dtgrv_bangdiemsv.Size = new System.Drawing.Size(827, 292);
             this.dtgrv_bangdiemsv.TabIndex = 0;
             // 
             // Column1
@@ -245,7 +246,7 @@
             this.Column15.Name = "Column15";
             this.Column15.Width = 125;
             // 
-            // FormDIem
+            // FormDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -256,7 +257,7 @@
             this.Controls.Add(this.lb_timkiem);
             this.Controls.Add(this.cbx_Chonhocky);
             this.Controls.Add(this.btn_Xuatfile);
-            this.Name = "FormDIem";
+            this.Name = "FormDiem";
             this.Text = "FormDIem";
             this.grb_Bangdiemsv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_bangdiemsv)).EndInit();
