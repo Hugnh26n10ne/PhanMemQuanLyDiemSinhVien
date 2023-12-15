@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Class"
+    "\\Class",
+    "\\Form"
   ],
-  "SelectedNode": "\\Class\\cls_SinhVien.cs",
+  "SelectedNode": "\\Form\\FormNhapMonHoc.cs",
   "PreviewInSolutionExplorer": false
 }

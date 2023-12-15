@@ -9,3 +9,13 @@ E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiem
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.Form_Dang_Ki.resources
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.AssemblyReference.cache
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.FormNhapMonHoc.resources
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.GenerateResource.cache
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\bin\Debug\PhanMemQuanLyDiemSinhVien.exe.config
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\bin\Debug\PhanMemQuanLyDiemSinhVien.exe
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\bin\Debug\PhanMemQuanLyDiemSinhVien.pdb
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.Properties.Resources.resources
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.CoreCompileInputs.cache

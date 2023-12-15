@@ -16,5 +16,10 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             InitializeComponent();
         }
+
+        private void FormNhapMonHoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
