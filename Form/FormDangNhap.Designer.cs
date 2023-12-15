@@ -32,6 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lb_QuenMK = new System.Windows.Forms.Label();
+            this.cbx_GhiNho = new System.Windows.Forms.CheckBox();
             this.pbx_Help = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lb_DangKi = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbx_TaiKhoan = new System.Windows.Forms.TextBox();
             this.lb_Tk = new System.Windows.Forms.Label();
-            this.cbx_GhiNho = new System.Windows.Forms.CheckBox();
-            this.lb_QuenMK = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Help)).BeginInit();
@@ -98,6 +98,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đăng nhập";
+            // 
+            // lb_QuenMK
+            // 
+            this.lb_QuenMK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_QuenMK.AutoSize = true;
+            this.lb_QuenMK.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_QuenMK.ForeColor = System.Drawing.Color.Green;
+            this.lb_QuenMK.Location = new System.Drawing.Point(161, 217);
+            this.lb_QuenMK.Name = "lb_QuenMK";
+            this.lb_QuenMK.Size = new System.Drawing.Size(137, 23);
+            this.lb_QuenMK.TabIndex = 14;
+            this.lb_QuenMK.Text = "Quên mật khẩu?";
+            // 
+            // cbx_GhiNho
+            // 
+            this.cbx_GhiNho.AutoSize = true;
+            this.cbx_GhiNho.Location = new System.Drawing.Point(24, 216);
+            this.cbx_GhiNho.Name = "cbx_GhiNho";
+            this.cbx_GhiNho.Size = new System.Drawing.Size(93, 27);
+            this.cbx_GhiNho.TabIndex = 13;
+            this.cbx_GhiNho.Text = "Ghi nhớ";
+            this.cbx_GhiNho.UseVisualStyleBackColor = true;
             // 
             // pbx_Help
             // 
@@ -157,6 +179,7 @@
             this.btn_DangNhap.TabIndex = 4;
             this.btn_DangNhap.Text = "Đăng Nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // tbx_MatKhau
             // 
@@ -196,28 +219,6 @@
             this.lb_Tk.TabIndex = 0;
             this.lb_Tk.Text = "Tài khoản";
             // 
-            // cbx_GhiNho
-            // 
-            this.cbx_GhiNho.AutoSize = true;
-            this.cbx_GhiNho.Location = new System.Drawing.Point(24, 216);
-            this.cbx_GhiNho.Name = "cbx_GhiNho";
-            this.cbx_GhiNho.Size = new System.Drawing.Size(93, 27);
-            this.cbx_GhiNho.TabIndex = 13;
-            this.cbx_GhiNho.Text = "Ghi nhớ";
-            this.cbx_GhiNho.UseVisualStyleBackColor = true;
-            // 
-            // lb_QuenMK
-            // 
-            this.lb_QuenMK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lb_QuenMK.AutoSize = true;
-            this.lb_QuenMK.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_QuenMK.ForeColor = System.Drawing.Color.Green;
-            this.lb_QuenMK.Location = new System.Drawing.Point(161, 217);
-            this.lb_QuenMK.Name = "lb_QuenMK";
-            this.lb_QuenMK.Size = new System.Drawing.Size(137, 23);
-            this.lb_QuenMK.TabIndex = 14;
-            this.lb_QuenMK.Text = "Quên mật khẩu?";
-            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -226,7 +227,9 @@
             this.ClientSize = new System.Drawing.Size(956, 616);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(974, 663);
             this.Name = "FormDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý điểm sinh viên";
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

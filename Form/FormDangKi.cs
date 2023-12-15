@@ -15,7 +15,7 @@ namespace PhanMemQuanLyDiemSinhVien
     public partial class FormDangKi : Form
     {
 
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
+        public SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
 
         public FormDangKi()
         {
@@ -24,18 +24,62 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private bool CheckNLMK()
         {
-            if (tbx_TaiKhoan.Text == tbx_NhapLMK.Text) return true;
+            if (tbx_MatKhau.Text == tbx_NhapLMK.Text) return true;
             return false;
+        }
+        private void CheckTrungTK(string m_tk, ref int m_kq)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            SqlCommand cmd = new SqlCommand("CheckTrungUSER", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@tai_khoan", SqlDbType.NVarChar, 50).Value = m_tk;
+            SqlParameter kq = new SqlParameter("@ket_qua", SqlDbType.Int);
+            cmd.Parameters.Add(kq).Direction = ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+
+            m_kq = (int)kq.Value;
+
+            cmd.Dispose();
+            conn.Close();
         }
 
         private void btn_DangKi_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(tbx_TaiKhoan.Text))
+            {
+                MessageBox.Show("Không được để trống!");
+                tbx_TaiKhoan.Focus();
+            }
+            if (string.IsNullOrEmpty(tbx_MatKhau.Text))
+            {
+                MessageBox.Show("Không được để trống!");
+                tbx_MatKhau.Focus();
+            }
+            if (string.IsNullOrEmpty(tbx_NhapLMK.Text))
+            {
+                MessageBox.Show("Không được để trống!");
+                tbx_NhapLMK.Focus();
+            }
+
+            int m_kq = 0;
+            CheckTrungTK(tbx_TaiKhoan.Text, ref m_kq);
+            if (m_kq == 1)
+            {
+                MessageBox.Show("Tài khoản đã tồn tại!");
+                tbx_TaiKhoan.Text = "";
+                tbx_TaiKhoan.Focus();
+                return;
+            }
+
             if (!CheckNLMK())
             {
-                MessageBox.Show("Nhập lại mật khẩu không trùng khớp!");
+                MessageBox.Show("Nhập lại mật khẩu!");
                 tbx_NhapLMK.Text = "";
                 tbx_NhapLMK.Focus();
-                return; 
+                return;
             }
 
             if (conn.State == ConnectionState.Closed)
@@ -47,18 +91,58 @@ namespace PhanMemQuanLyDiemSinhVien
 
             cls_SinhVien sinhVien = new cls_SinhVien()
             {
-                TaiKhoan = tbx_TaiKhoan.Text,
+                TaiKhoan = tbx_TaiKhoan.Text.ToUpper(),
                 MatKhau = tbx_MatKhau.Text,
                 Level = 0,
             };
 
             string query = $"INSERT INTO [User] (tai_khoan, mat_khau, rank) VALUES (N'{sinhVien.TaiKhoan}', N'{sinhVien.MatKhau}', {sinhVien.Level}) ";
 
-            MessageBox.Show(query);
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             conn.Close();
+
+
+            if (MessageBox.Show("Bạn đã tạo tài khoản thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.Cancel)
+            {
+                Dispose();
+            };
+
+            if (MessageBox.Show("Bạn có muốn chuyển qua ĐĂNG NHẬP", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                this.Hide();
+                FormDangNhap fdn = new FormDangNhap();
+                fdn.Show();
+            };
+        }
+
+        private void lb_DangNhap_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void pbx_Show_Click(object sender, EventArgs e)
+        {
+            pbx_Show.Hide();
+            pbx_Hide.Show();
+            tbx_MatKhau.PasswordChar = '*';
+            tbx_NhapLMK.PasswordChar = '*';
+        }
+
+        private void pbx_Hide_Click(object sender, EventArgs e)
+        {
+            pbx_Hide.Hide();
+            pbx_Show.Show();
+            tbx_MatKhau.PasswordChar = default;
+            tbx_NhapLMK.PasswordChar = default;
+        }
+
+        private void pbx_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hãy gọi theo số 09xxxxxx90 hoặc nhắn tin zalo theo số 09xxxxxx90 để được hỗ trợ!");
         }
     }
 }

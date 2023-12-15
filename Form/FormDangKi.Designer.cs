@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbx_Show = new System.Windows.Forms.PictureBox();
             this.pbx_Help = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbx_NhapLMK = new System.Windows.Forms.TextBox();
@@ -43,9 +44,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbx_TaiKhoan = new System.Windows.Forms.TextBox();
             this.lb_Tk = new System.Windows.Forms.Label();
+            this.pbx_Hide = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Help)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Hide)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,10 +89,12 @@
             this.groupBox1.Controls.Add(this.lb_DangNhap);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btn_DangKi);
-            this.groupBox1.Controls.Add(this.tbx_MatKhau);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tbx_TaiKhoan);
             this.groupBox1.Controls.Add(this.lb_Tk);
+            this.groupBox1.Controls.Add(this.pbx_Hide);
+            this.groupBox1.Controls.Add(this.pbx_Show);
+            this.groupBox1.Controls.Add(this.tbx_MatKhau);
             this.groupBox1.Location = new System.Drawing.Point(303, 121);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
@@ -97,6 +103,19 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đăng kí";
+            // 
+            // pbx_Show
+            // 
+            this.pbx_Show.BackColor = System.Drawing.Color.Transparent;
+            this.pbx_Show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_Show.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.show;
+            this.pbx_Show.Location = new System.Drawing.Point(273, 170);
+            this.pbx_Show.Name = "pbx_Show";
+            this.pbx_Show.Size = new System.Drawing.Size(25, 19);
+            this.pbx_Show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Show.TabIndex = 13;
+            this.pbx_Show.TabStop = false;
+            this.pbx_Show.Click += new System.EventHandler(this.pbx_Show_Click);
             // 
             // pbx_Help
             // 
@@ -108,6 +127,7 @@
             this.pbx_Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_Help.TabIndex = 12;
             this.pbx_Help.TabStop = false;
+            this.pbx_Help.Click += new System.EventHandler(this.pbx_Help_Click);
             // 
             // label4
             // 
@@ -149,6 +169,7 @@
             this.lb_DangNhap.Size = new System.Drawing.Size(98, 23);
             this.lb_DangNhap.TabIndex = 8;
             this.lb_DangNhap.Text = "Đăng Nhập";
+            this.lb_DangNhap.Click += new System.EventHandler(this.lb_DangNhap_Click);
             // 
             // label3
             // 
@@ -182,6 +203,7 @@
             this.tbx_MatKhau.Location = new System.Drawing.Point(24, 165);
             this.tbx_MatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_MatKhau.Name = "tbx_MatKhau";
+            this.tbx_MatKhau.PasswordChar = '*';
             this.tbx_MatKhau.Size = new System.Drawing.Size(274, 30);
             this.tbx_MatKhau.TabIndex = 3;
             // 
@@ -212,6 +234,19 @@
             this.lb_Tk.TabIndex = 0;
             this.lb_Tk.Text = "Tài khoản";
             // 
+            // pbx_Hide
+            // 
+            this.pbx_Hide.BackColor = System.Drawing.Color.Transparent;
+            this.pbx_Hide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_Hide.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.hide;
+            this.pbx_Hide.Location = new System.Drawing.Point(273, 170);
+            this.pbx_Hide.Name = "pbx_Hide";
+            this.pbx_Hide.Size = new System.Drawing.Size(25, 19);
+            this.pbx_Hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Hide.TabIndex = 14;
+            this.pbx_Hide.TabStop = false;
+            this.pbx_Hide.Click += new System.EventHandler(this.pbx_Hide_Click);
+            // 
             // FormDangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -229,7 +264,9 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Help)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Hide)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,6 +287,8 @@
         private System.Windows.Forms.TextBox tbx_NhapLMK;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pbx_Show;
+        private System.Windows.Forms.PictureBox pbx_Hide;
     }
 }
 
