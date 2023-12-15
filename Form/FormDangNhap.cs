@@ -19,7 +19,60 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             InitializeComponent();
         }
+        public int CheckTaiKhoan(string taiKhoan)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            int ketQua = 0;
 
+            string query = "SELECT 1 FROM [73DCTT23_QLDiemSV].[dbo].[User] WHERE [tai_khoan] = @tai_khoan";
+
+            using (SqlCommand command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@tai_khoan", taiKhoan);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        // Tài khoản tồn tại
+                        ketQua = 1;
+                    }
+                }
+            }
+
+
+            return ketQua;
+        }
+        public int CheckMatKhau(string matKhau)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            int ketQua = 0;
+
+            string query = "SELECT 1 FROM [73DCTT23_QLDiemSV].[dbo].[User] WHERE [mat_khau] = @mat_khau";
+
+            using (SqlCommand command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@mat_khau", matKhau);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        // Tài khoản tồn tại
+                        ketQua = 1;
+                    }
+                }
+            }
+
+
+            return ketQua;
+        }
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbx_TaiKhoan.Text))
@@ -39,8 +92,31 @@ namespace PhanMemQuanLyDiemSinhVien
                 MatKhau = tbx_MatKhau.Text,
                 Level = 0,
             };
+            if(CheckTaiKhoan(sinhVien.TaiKhoan) != 1)
+            {
+                MessageBox.Show("Tài khoản không tồn tại!");
+                tbx_TaiKhoan.Focus();
+            }
+            if (CheckMatKhau(sinhVien.MatKhau) != 1)
+            {
+                MessageBox.Show("Sai mật khẩu!");
+                tbx_MatKhau.Focus();
+            }
+            MessageBox.Show("Đăng nhập thành công!");
+        }
 
-            
+        private void pbx_Show_Click(object sender, EventArgs e)
+        {
+            pbx_Show.Hide();
+            pbx_Hide.Show();
+            tbx_MatKhau.PasswordChar = '*';
+        }
+
+        private void pbx_Hide_Click(object sender, EventArgs e)
+        {
+            pbx_Hide.Hide();
+            pbx_Show.Show();
+            tbx_MatKhau.PasswordChar = default;
         }
     }
 }
