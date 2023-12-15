@@ -59,15 +59,5 @@ namespace PhanMemQuanLyDiemSinhVien.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _382556233_817950156693875_836997368643846521_n {
-            get {
-                object obj = ResourceManager.GetObject("382556233_817950156693875_836997368643846521_n", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
