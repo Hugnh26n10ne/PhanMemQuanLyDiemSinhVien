@@ -9,3 +9,9 @@ E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiem
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.Form_Dang_Ki.resources
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\PhanMemQuanLyDiemSinhVien1\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.CoreCompileInputs.cache
