@@ -45,10 +45,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -236,25 +236,25 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Tìm kiếm";
             // 
-            // pictureBox1
+            // pbx_TimKiem
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pbx_TimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(645, 24);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(38, 38);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(38, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.pbx_TimKiem.Location = new System.Drawing.Point(645, 24);
+            this.pbx_TimKiem.MaximumSize = new System.Drawing.Size(38, 38);
+            this.pbx_TimKiem.MinimumSize = new System.Drawing.Size(38, 38);
+            this.pbx_TimKiem.Name = "pbx_TimKiem";
+            this.pbx_TimKiem.Size = new System.Drawing.Size(38, 38);
+            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_TimKiem.TabIndex = 25;
+            this.pbx_TimKiem.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pbx_TimKiem);
             this.panel1.Controls.Add(this.tbx_TimKiem);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_Them);
@@ -279,7 +279,7 @@
             this.Text = "FormNhapMonHoc";
             this.Load += new System.EventHandler(this.FormNhapMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -305,7 +305,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_DiemChu;
         private System.Windows.Forms.TextBox tbx_TimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.Panel panel1;
     }
 }

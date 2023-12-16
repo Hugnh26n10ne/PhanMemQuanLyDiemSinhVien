@@ -19,3 +19,4 @@ C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\bin\Debug\PhanMemQuanLyDie
 C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\bin\Debug\PhanMemQuanLyDiemSinhVien.pdb
 C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.Properties.Resources.resources
 C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.CoreCompileInputs.cache
+C:\Users\ngluo\Source\Repos\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.FormNhapThongTin.resources
