@@ -88,10 +88,14 @@ namespace PhanMemQuanLyDiemSinhVien
 
             }
 
-
-            string query = $"INSERT INTO [User] (tai_khoan, mat_khau, idPer, status) VALUES (N'{tbx_TaiKhoan.Text}', N'{tbx_MatKhau.Text}', {0}, {0}) ";
-
-            SqlCommand cmd = new SqlCommand(query, conn);
+            
+            SqlCommand cmd = new SqlCommand("SP_InsertUser", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@tai_khoan", SqlDbType.NVarChar, 50).Value = tbx_TaiKhoan.Text;
+            cmd.Parameters.Add("@mat_khau", SqlDbType.NVarChar, 50).Value = tbx_MatKhau.Text;
+            cmd.Parameters.Add("@idPer", SqlDbType.TinyInt).Value = 0;
+            cmd.Parameters.Add("@status", SqlDbType.TinyInt).Value = 0;
+            
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             conn.Close();
