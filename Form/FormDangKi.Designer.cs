@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pbx_Show = new System.Windows.Forms.PictureBox();
             this.pbx_Help = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbx_NhapLMK = new System.Windows.Forms.TextBox();
@@ -40,30 +39,29 @@
             this.lb_DangNhap = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_DangKi = new System.Windows.Forms.Button();
-            this.tbx_MatKhau = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbx_TaiKhoan = new System.Windows.Forms.TextBox();
             this.lb_Tk = new System.Windows.Forms.Label();
             this.pbx_Hide = new System.Windows.Forms.PictureBox();
+            this.pbx_Show = new System.Windows.Forms.PictureBox();
+            this.tbx_MatKhau = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Hide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 13);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(932, 590);
+            this.panel1.Size = new System.Drawing.Size(956, 616);
             this.panel1.TabIndex = 0;
             // 
             // label5
@@ -71,9 +69,9 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("UTM Alexander", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(346, 26);
+            this.label5.Location = new System.Drawing.Point(265, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(240, 72);
+            this.label5.Size = new System.Drawing.Size(396, 104);
             this.label5.TabIndex = 1;
             this.label5.Text = "ĐĂNG KÍ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,7 +93,7 @@
             this.groupBox1.Controls.Add(this.pbx_Hide);
             this.groupBox1.Controls.Add(this.pbx_Show);
             this.groupBox1.Controls.Add(this.tbx_MatKhau);
-            this.groupBox1.Location = new System.Drawing.Point(303, 121);
+            this.groupBox1.Location = new System.Drawing.Point(290, 127);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -103,19 +101,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đăng kí";
-            // 
-            // pbx_Show
-            // 
-            this.pbx_Show.BackColor = System.Drawing.Color.Transparent;
-            this.pbx_Show.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_Show.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.show;
-            this.pbx_Show.Location = new System.Drawing.Point(273, 170);
-            this.pbx_Show.Name = "pbx_Show";
-            this.pbx_Show.Size = new System.Drawing.Size(25, 19);
-            this.pbx_Show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_Show.TabIndex = 13;
-            this.pbx_Show.TabStop = false;
-            this.pbx_Show.Click += new System.EventHandler(this.pbx_Show_Click);
             // 
             // pbx_Help
             // 
@@ -147,6 +132,7 @@
             this.tbx_NhapLMK.Name = "tbx_NhapLMK";
             this.tbx_NhapLMK.Size = new System.Drawing.Size(274, 30);
             this.tbx_NhapLMK.TabIndex = 10;
+            this.tbx_NhapLMK.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -197,16 +183,6 @@
             this.btn_DangKi.UseVisualStyleBackColor = false;
             this.btn_DangKi.Click += new System.EventHandler(this.btn_DangKi_Click);
             // 
-            // tbx_MatKhau
-            // 
-            this.tbx_MatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbx_MatKhau.Location = new System.Drawing.Point(24, 165);
-            this.tbx_MatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbx_MatKhau.Name = "tbx_MatKhau";
-            this.tbx_MatKhau.PasswordChar = '*';
-            this.tbx_MatKhau.Size = new System.Drawing.Size(274, 30);
-            this.tbx_MatKhau.TabIndex = 3;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -247,6 +223,29 @@
             this.pbx_Hide.TabStop = false;
             this.pbx_Hide.Click += new System.EventHandler(this.pbx_Hide_Click);
             // 
+            // pbx_Show
+            // 
+            this.pbx_Show.BackColor = System.Drawing.Color.Transparent;
+            this.pbx_Show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_Show.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.show;
+            this.pbx_Show.Location = new System.Drawing.Point(273, 170);
+            this.pbx_Show.Name = "pbx_Show";
+            this.pbx_Show.Size = new System.Drawing.Size(25, 19);
+            this.pbx_Show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Show.TabIndex = 13;
+            this.pbx_Show.TabStop = false;
+            this.pbx_Show.Click += new System.EventHandler(this.pbx_Show_Click);
+            // 
+            // tbx_MatKhau
+            // 
+            this.tbx_MatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_MatKhau.Location = new System.Drawing.Point(24, 165);
+            this.tbx_MatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbx_MatKhau.Name = "tbx_MatKhau";
+            this.tbx_MatKhau.Size = new System.Drawing.Size(274, 30);
+            this.tbx_MatKhau.TabIndex = 3;
+            this.tbx_MatKhau.UseSystemPasswordChar = true;
+            // 
             // FormDangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -264,9 +263,9 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Help)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Hide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Show)).EndInit();
             this.ResumeLayout(false);
 
         }

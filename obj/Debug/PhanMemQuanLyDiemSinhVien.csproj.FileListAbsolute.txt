@@ -21,3 +21,5 @@ E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.e
 E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
 E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDangKi.resources
 E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDangNhap.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormQuenMK.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormRePassword.resources

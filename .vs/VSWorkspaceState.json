@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
+    "\\bin\\Debug",
     "\\Class",
     "\\Form"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\PhanMemQuanLyDiemSinhVien.sln",
   "PreviewInSolutionExplorer": false
 }

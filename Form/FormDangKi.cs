@@ -89,14 +89,7 @@ namespace PhanMemQuanLyDiemSinhVien
             }
 
 
-            cls_SinhVien sinhVien = new cls_SinhVien()
-            {
-                TaiKhoan = tbx_TaiKhoan.Text.ToUpper(),
-                MatKhau = tbx_MatKhau.Text,
-                Level = 0,
-            };
-
-            string query = $"INSERT INTO [User] (tai_khoan, mat_khau, rank) VALUES (N'{sinhVien.TaiKhoan}', N'{sinhVien.MatKhau}', {sinhVien.Level}) ";
+            string query = $"INSERT INTO [User] (tai_khoan, mat_khau, idPer, status) VALUES (N'{tbx_TaiKhoan.Text}', N'{tbx_MatKhau.Text}', {0}, {0}) ";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.ExecuteNonQuery();
@@ -128,16 +121,16 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             pbx_Show.Hide();
             pbx_Hide.Show();
-            tbx_MatKhau.PasswordChar = '*';
-            tbx_NhapLMK.PasswordChar = '*';
+            tbx_MatKhau.UseSystemPasswordChar = true;
+            tbx_NhapLMK.UseSystemPasswordChar = true;
         }
 
         private void pbx_Hide_Click(object sender, EventArgs e)
         {
             pbx_Hide.Hide();
             pbx_Show.Show();
-            tbx_MatKhau.PasswordChar = default;
-            tbx_NhapLMK.PasswordChar = default;
+            tbx_MatKhau.UseSystemPasswordChar = false;
+            tbx_NhapLMK.UseSystemPasswordChar = false;
         }
 
         private void pbx_Help_Click(object sender, EventArgs e)
