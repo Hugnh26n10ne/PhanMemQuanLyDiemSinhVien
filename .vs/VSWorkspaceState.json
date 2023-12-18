@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\Class",
+    "\\Form"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Form\\FormDangKi.cs",
   "PreviewInSolutionExplorer": false
 }

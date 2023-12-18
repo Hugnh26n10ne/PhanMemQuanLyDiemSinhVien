@@ -9,3 +9,17 @@ E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiem
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
 E:\Data\LapTrinh\C#\HocTap\PhanMemQuanLyDiemSinhVien\obj\Debug\PhanMemQuanLyDiemSinhVien.Form_Dang_Ki.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\bin\Debug\PhanMemQuanLyDiemSinhVien.exe.config
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\bin\Debug\PhanMemQuanLyDiemSinhVien.exe
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\bin\Debug\PhanMemQuanLyDiemSinhVien.pdb
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.AssemblyReference.cache
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.SuggestedBindingRedirects.cache
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.Properties.Resources.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.GenerateResource.cache
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.csproj.CoreCompileInputs.cache
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.exe
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.pdb
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDangKi.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormDangNhap.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormQuenMK.resources
+E:\Data\LapTrinh\C#\ThucHanh\AppQuanLyDiem\obj\Debug\PhanMemQuanLyDiemSinhVien.FormRePassword.resources
