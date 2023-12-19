@@ -37,18 +37,17 @@
             this.dtgrv_TenGiaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Them = new System.Windows.Forms.Button();
-            this.btn_Sua = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_XuatFile = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TimKiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,32 +130,32 @@
             this.dtgrv_DiemChu.MinimumWidth = 6;
             this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
             // 
-            // btn_Them
+            // btn_Luu
             // 
-            this.btn_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btn_Luu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Them.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Them.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_Them.Location = new System.Drawing.Point(43, 109);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(103, 35);
-            this.btn_Them.TabIndex = 17;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.UseVisualStyleBackColor = false;
+            this.btn_Luu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_Luu.Location = new System.Drawing.Point(43, 109);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(103, 35);
+            this.btn_Luu.TabIndex = 17;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.UseVisualStyleBackColor = false;
             // 
-            // btn_Sua
+            // btn_Update
             // 
-            this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btn_Update.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Sua.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_Sua.Location = new System.Drawing.Point(183, 109);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(103, 35);
-            this.btn_Sua.TabIndex = 18;
-            this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Update.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_Update.Location = new System.Drawing.Point(183, 109);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(103, 35);
+            this.btn_Update.TabIndex = 18;
+            this.btn_Update.Text = "Update";
+            this.btn_Update.UseVisualStyleBackColor = true;
             // 
             // btn_Xoa
             // 
@@ -236,29 +235,14 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Tìm kiếm";
             // 
-            // pbx_TimKiem
-            // 
-            this.pbx_TimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pbx_TimKiem.Location = new System.Drawing.Point(645, 24);
-            this.pbx_TimKiem.MaximumSize = new System.Drawing.Size(38, 38);
-            this.pbx_TimKiem.MinimumSize = new System.Drawing.Size(38, 38);
-            this.pbx_TimKiem.Name = "pbx_TimKiem";
-            this.pbx_TimKiem.Size = new System.Drawing.Size(38, 38);
-            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_TimKiem.TabIndex = 25;
-            this.pbx_TimKiem.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.Controls.Add(this.pbx_TimKiem);
+            this.panel1.Controls.Add(this.btn_TimKiem);
             this.panel1.Controls.Add(this.tbx_TimKiem);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btn_Them);
-            this.panel1.Controls.Add(this.btn_Sua);
+            this.panel1.Controls.Add(this.btn_Luu);
+            this.panel1.Controls.Add(this.btn_Update);
             this.panel1.Controls.Add(this.btn_Xoa);
             this.panel1.Controls.Add(this.btn_Thoat);
             this.panel1.Controls.Add(this.btn_XuatFile);
@@ -266,6 +250,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 161);
             this.panel1.TabIndex = 26;
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.BackgroundImage = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.btn_TimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_TimKiem.Location = new System.Drawing.Point(645, 24);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Size = new System.Drawing.Size(45, 42);
+            this.btn_TimKiem.TabIndex = 25;
+            this.btn_TimKiem.UseVisualStyleBackColor = true;
             // 
             // FormNhapMonHoc
             // 
@@ -279,7 +273,6 @@
             this.Text = "FormNhapMonHoc";
             this.Load += new System.EventHandler(this.FormNhapMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -289,8 +282,8 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_Them;
-        private System.Windows.Forms.Button btn_Sua;
+        private System.Windows.Forms.Button btn_Luu;
+        private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_XuatFile;
         private System.Windows.Forms.Button btn_Thoat;
@@ -305,7 +298,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_DiemChu;
         private System.Windows.Forms.TextBox tbx_TimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_TimKiem;
     }
 }

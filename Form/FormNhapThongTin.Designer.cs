@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Thoat = new System.Windows.Forms.Button();
+            this.btn_XuatFileExcel = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btn_Xoa = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_HoVaTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,40 +62,100 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tbx_MaSinhVien = new System.Windows.Forms.TextBox();
+            this.tbx_HoTen = new System.Windows.Forms.TextBox();
+            this.tbx_NgaySinh = new System.Windows.Forms.TextBox();
+            this.tbx_QueQuan = new System.Windows.Forms.TextBox();
+            this.tbx_DanToc = new System.Windows.Forms.TextBox();
+            this.cbx_GioiTinh = new System.Windows.Forms.ComboBox();
+            this.tbx_SDT = new System.Windows.Forms.TextBox();
+            this.tbx_Email = new System.Windows.Forms.TextBox();
+            this.tbx_Lop = new System.Windows.Forms.TextBox();
+            this.tbx_Khoa = new System.Windows.Forms.TextBox();
+            this.tbx_Nganh = new System.Windows.Forms.TextBox();
+            this.cbx_TrangThai = new System.Windows.Forms.ComboBox();
+            this.labe = new System.Windows.Forms.Label();
+            this.tbx_TimKiem = new System.Windows.Forms.TextBox();
+            this.btn_TimKiem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btn_TimKiem);
+            this.groupBox1.Controls.Add(this.tbx_TimKiem);
+            this.groupBox1.Controls.Add(this.labe);
+            this.groupBox1.Controls.Add(this.btn_Thoat);
+            this.groupBox1.Controls.Add(this.btn_XuatFileExcel);
+            this.groupBox1.Controls.Add(this.btn_Update);
+            this.groupBox1.Controls.Add(this.btn_Xoa);
+            this.groupBox1.Controls.Add(this.btn_Luu);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1163, 118);
+            this.groupBox1.Size = new System.Drawing.Size(1163, 189);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
+            // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Thoat.ForeColor = System.Drawing.Color.SlateGray;
+            this.btn_Thoat.Location = new System.Drawing.Point(880, 136);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(105, 35);
+            this.btn_Thoat.TabIndex = 5;
+            this.btn_Thoat.Text = "Thoát";
+            this.btn_Thoat.UseVisualStyleBackColor = true;
+            // 
+            // btn_XuatFileExcel
+            // 
+            this.btn_XuatFileExcel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_XuatFileExcel.Location = new System.Drawing.Point(671, 136);
+            this.btn_XuatFileExcel.Name = "btn_XuatFileExcel";
+            this.btn_XuatFileExcel.Size = new System.Drawing.Size(143, 35);
+            this.btn_XuatFileExcel.TabIndex = 4;
+            this.btn_XuatFileExcel.Text = "Xuất file Excel";
+            this.btn_XuatFileExcel.UseVisualStyleBackColor = true;
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Update.ForeColor = System.Drawing.Color.Olive;
+            this.btn_Update.Location = new System.Drawing.Point(280, 136);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(105, 35);
+            this.btn_Update.TabIndex = 3;
+            this.btn_Update.Text = "Update";
+            this.btn_Update.UseVisualStyleBackColor = true;
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Xoa.ForeColor = System.Drawing.Color.Firebrick;
+            this.btn_Xoa.Location = new System.Drawing.Point(480, 136);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(105, 35);
+            this.btn_Xoa.TabIndex = 2;
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.UseVisualStyleBackColor = true;
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Luu.ForeColor = System.Drawing.Color.LimeGreen;
+            this.btn_Luu.Location = new System.Drawing.Point(80, 136);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(105, 35);
+            this.btn_Luu.TabIndex = 1;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -109,65 +169,11 @@
             this.label1.Text = "Cập nhật thông tin sinh viên: Thêm, Sửa, Xóa,...";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // dataGridView
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.button1.Location = new System.Drawing.Point(70, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(470, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.ForeColor = System.Drawing.Color.Olive;
-            this.button3.Location = new System.Drawing.Point(270, 70);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 35);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(670, 70);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 35);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Xuất file";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button5.ForeColor = System.Drawing.Color.SlateGray;
-            this.button5.Location = new System.Drawing.Point(870, 70);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 35);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dtgrv_Stt,
             this.dtgrv_MaSinhVien,
             this.dtgrv_HoVaTen,
@@ -181,12 +187,12 @@
             this.dtgrv_Nganh,
             this.dtgrv_Lop,
             this.dtgrv_TrangThai});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1163, 222);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView.Location = new System.Drawing.Point(12, 207);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.Size = new System.Drawing.Size(1163, 151);
+            this.dataGridView.TabIndex = 6;
             // 
             // dtgrv_Stt
             // 
@@ -421,140 +427,169 @@
             this.label13.TabIndex = 19;
             this.label13.Text = "Trạng Thái:";
             // 
-            // textBox1
+            // tbx_MaSinhVien
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox1.Location = new System.Drawing.Point(318, 380);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(394, 22);
-            this.textBox1.TabIndex = 21;
+            this.tbx_MaSinhVien.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_MaSinhVien.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_MaSinhVien.Location = new System.Drawing.Point(318, 380);
+            this.tbx_MaSinhVien.Name = "tbx_MaSinhVien";
+            this.tbx_MaSinhVien.Size = new System.Drawing.Size(394, 22);
+            this.tbx_MaSinhVien.TabIndex = 21;
             // 
-            // textBox2
+            // tbx_HoTen
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox2.Location = new System.Drawing.Point(318, 420);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(394, 22);
-            this.textBox2.TabIndex = 22;
+            this.tbx_HoTen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_HoTen.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_HoTen.Location = new System.Drawing.Point(318, 420);
+            this.tbx_HoTen.Name = "tbx_HoTen";
+            this.tbx_HoTen.Size = new System.Drawing.Size(394, 22);
+            this.tbx_HoTen.TabIndex = 22;
             // 
-            // textBox3
+            // tbx_NgaySinh
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox3.Location = new System.Drawing.Point(318, 460);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(394, 22);
-            this.textBox3.TabIndex = 23;
+            this.tbx_NgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_NgaySinh.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_NgaySinh.Location = new System.Drawing.Point(318, 460);
+            this.tbx_NgaySinh.Name = "tbx_NgaySinh";
+            this.tbx_NgaySinh.Size = new System.Drawing.Size(394, 22);
+            this.tbx_NgaySinh.TabIndex = 23;
             // 
-            // textBox5
+            // tbx_QueQuan
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox5.Location = new System.Drawing.Point(318, 540);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(394, 22);
-            this.textBox5.TabIndex = 25;
+            this.tbx_QueQuan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_QueQuan.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_QueQuan.Location = new System.Drawing.Point(318, 540);
+            this.tbx_QueQuan.Name = "tbx_QueQuan";
+            this.tbx_QueQuan.Size = new System.Drawing.Size(394, 22);
+            this.tbx_QueQuan.TabIndex = 25;
             // 
-            // textBox6
+            // tbx_DanToc
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox6.Location = new System.Drawing.Point(318, 580);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(394, 22);
-            this.textBox6.TabIndex = 26;
+            this.tbx_DanToc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_DanToc.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_DanToc.Location = new System.Drawing.Point(318, 580);
+            this.tbx_DanToc.Name = "tbx_DanToc";
+            this.tbx_DanToc.Size = new System.Drawing.Size(394, 22);
+            this.tbx_DanToc.TabIndex = 26;
             // 
-            // comboBox1
+            // cbx_GioiTinh
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbx_GioiTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbx_GioiTinh.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cbx_GioiTinh.FormattingEnabled = true;
+            this.cbx_GioiTinh.Items.AddRange(new object[] {
+            "- Chọn giới tính -",
             "Nam",
             "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(318, 500);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 27;
+            this.cbx_GioiTinh.Location = new System.Drawing.Point(318, 500);
+            this.cbx_GioiTinh.Name = "cbx_GioiTinh";
+            this.cbx_GioiTinh.Size = new System.Drawing.Size(121, 24);
+            this.cbx_GioiTinh.TabIndex = 27;
             // 
-            // textBox4
+            // tbx_SDT
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox4.Location = new System.Drawing.Point(892, 380);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(283, 22);
-            this.textBox4.TabIndex = 28;
+            this.tbx_SDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_SDT.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_SDT.Location = new System.Drawing.Point(892, 380);
+            this.tbx_SDT.Name = "tbx_SDT";
+            this.tbx_SDT.Size = new System.Drawing.Size(283, 22);
+            this.tbx_SDT.TabIndex = 28;
             // 
-            // textBox7
+            // tbx_Email
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox7.Location = new System.Drawing.Point(892, 420);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(283, 22);
-            this.textBox7.TabIndex = 29;
+            this.tbx_Email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_Email.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_Email.Location = new System.Drawing.Point(892, 420);
+            this.tbx_Email.Name = "tbx_Email";
+            this.tbx_Email.Size = new System.Drawing.Size(283, 22);
+            this.tbx_Email.TabIndex = 29;
             // 
-            // textBox8
+            // tbx_Lop
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox8.Location = new System.Drawing.Point(892, 460);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(283, 22);
-            this.textBox8.TabIndex = 30;
+            this.tbx_Lop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_Lop.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_Lop.Location = new System.Drawing.Point(892, 460);
+            this.tbx_Lop.Name = "tbx_Lop";
+            this.tbx_Lop.Size = new System.Drawing.Size(283, 22);
+            this.tbx_Lop.TabIndex = 30;
             // 
-            // textBox9
+            // tbx_Khoa
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox9.Location = new System.Drawing.Point(892, 500);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(283, 22);
-            this.textBox9.TabIndex = 31;
+            this.tbx_Khoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_Khoa.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_Khoa.Location = new System.Drawing.Point(892, 500);
+            this.tbx_Khoa.Name = "tbx_Khoa";
+            this.tbx_Khoa.Size = new System.Drawing.Size(283, 22);
+            this.tbx_Khoa.TabIndex = 31;
             // 
-            // textBox10
+            // tbx_Nganh
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox10.Location = new System.Drawing.Point(892, 540);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(283, 22);
-            this.textBox10.TabIndex = 32;
+            this.tbx_Nganh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbx_Nganh.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbx_Nganh.Location = new System.Drawing.Point(892, 540);
+            this.tbx_Nganh.Name = "tbx_Nganh";
+            this.tbx_Nganh.Size = new System.Drawing.Size(283, 22);
+            this.tbx_Nganh.TabIndex = 32;
             // 
-            // comboBox2
+            // cbx_TrangThai
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbx_TrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbx_TrangThai.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cbx_TrangThai.FormattingEnabled = true;
+            this.cbx_TrangThai.Items.AddRange(new object[] {
             "Đang học",
             "Đã Nghỉ",
             "Bảo Lưu"});
-            this.comboBox2.Location = new System.Drawing.Point(892, 580);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 33;
+            this.cbx_TrangThai.Location = new System.Drawing.Point(892, 580);
+            this.cbx_TrangThai.Name = "cbx_TrangThai";
+            this.cbx_TrangThai.Size = new System.Drawing.Size(121, 24);
+            this.cbx_TrangThai.TabIndex = 33;
+            // 
+            // labe
+            // 
+            this.labe.AutoSize = true;
+            this.labe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labe.Location = new System.Drawing.Point(181, 78);
+            this.labe.Name = "labe";
+            this.labe.Size = new System.Drawing.Size(99, 28);
+            this.labe.TabIndex = 6;
+            this.labe.Text = "TÌm Kiếm";
+            // 
+            // tbx_TimKiem
+            // 
+            this.tbx_TimKiem.Location = new System.Drawing.Point(286, 75);
+            this.tbx_TimKiem.Name = "tbx_TimKiem";
+            this.tbx_TimKiem.Size = new System.Drawing.Size(468, 34);
+            this.tbx_TimKiem.TabIndex = 7;
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.BackgroundImage = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.btn_TimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_TimKiem.Location = new System.Drawing.Point(760, 78);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Size = new System.Drawing.Size(54, 32);
+            this.btn_TimKiem.TabIndex = 8;
+            this.btn_TimKiem.UseVisualStyleBackColor = true;
             // 
             // FormNhapThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 702);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbx_TrangThai);
+            this.Controls.Add(this.tbx_Nganh);
+            this.Controls.Add(this.tbx_Khoa);
+            this.Controls.Add(this.tbx_Lop);
+            this.Controls.Add(this.tbx_Email);
+            this.Controls.Add(this.tbx_SDT);
+            this.Controls.Add(this.cbx_GioiTinh);
+            this.Controls.Add(this.tbx_DanToc);
+            this.Controls.Add(this.tbx_QueQuan);
+            this.Controls.Add(this.tbx_NgaySinh);
+            this.Controls.Add(this.tbx_HoTen);
+            this.Controls.Add(this.tbx_MaSinhVien);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -568,13 +603,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormNhapThongTin";
             this.Text = "FormNhapThongTin";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -585,12 +620,12 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_Thoat;
+        private System.Windows.Forms.Button btn_XuatFileExcel;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Xoa;
+        private System.Windows.Forms.Button btn_Luu;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_MaSinhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_HoVaTen;
@@ -617,17 +652,20 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox tbx_MaSinhVien;
+        private System.Windows.Forms.TextBox tbx_HoTen;
+        private System.Windows.Forms.TextBox tbx_NgaySinh;
+        private System.Windows.Forms.TextBox tbx_QueQuan;
+        private System.Windows.Forms.TextBox tbx_DanToc;
+        private System.Windows.Forms.ComboBox cbx_GioiTinh;
+        private System.Windows.Forms.TextBox tbx_SDT;
+        private System.Windows.Forms.TextBox tbx_Email;
+        private System.Windows.Forms.TextBox tbx_Lop;
+        private System.Windows.Forms.TextBox tbx_Khoa;
+        private System.Windows.Forms.TextBox tbx_Nganh;
+        private System.Windows.Forms.ComboBox cbx_TrangThai;
+        private System.Windows.Forms.Button btn_TimKiem;
+        private System.Windows.Forms.TextBox tbx_TimKiem;
+        private System.Windows.Forms.Label labe;
     }
 }

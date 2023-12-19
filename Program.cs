@@ -16,7 +16,7 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormNhapThongTin());
+            Application.Run(new FormNhapMonHoc());
         }
     }
 }
